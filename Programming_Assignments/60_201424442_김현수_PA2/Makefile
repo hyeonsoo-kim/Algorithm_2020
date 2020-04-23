@@ -1,17 +1,16 @@
-CC = gcc
+CC = g++
 CXXSTD = c++11
-CXXLIB = stdc++
-FLAG = -std=$(CXXSTD) -l$(CXXLIB) -lm
+FLAG = -std=$(CXXSTD)
 TEX = xelatex
 all: program report
 
 program: PA02.cpp
 	@echo "[*] Programming Assignment 02 : Compile..."
-	@$(CC) PA01-2.cpp -o pa01-2 $(FLAG)
+	@$(CC) $(FLAG) PA02.cpp -o pa02
 
 report: PA02-Report.tex 
 	@echo "[*] Generating Report"
 	@$(TEX) PA02-Report.tex 
 
 clean:
-	@rm -rf *.exe *.log *.out pa02 PA01-Report.pdf
+	@rm -rf *.aux *.exe *.log *.out pa02 PA02-Report.pdf
