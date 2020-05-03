@@ -1,6 +1,6 @@
 CC = g++
 CXXSTD = c++11
-FLAG = -std=$(CXXSTD)
+FLAG = -O2 -std=$(CXXSTD)
 TEX = xelatex
 all: program report
 
