@@ -50,8 +50,8 @@ class functionality {
 
 int main(int argc, const char **argv) {
 		functionality Driver(argv[0]);
-		if(argc !=2 ){
-			return Driver.printerror(-1, (string("Usage : ")+string(argv[0])+string(" [only 1 filename]")));
+		if(argc !=3 ){
+			return Driver.printerror(-1, (string("Usage : ")+string(argv[0])+string(" [only 2 filename]")));
 			}
 		else {
 			}
